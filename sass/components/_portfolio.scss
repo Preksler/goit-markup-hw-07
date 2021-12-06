@@ -1,0 +1,126 @@
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-list__item {
+  margin-right: 8px;
+}
+
+.filter-list__item:last-child {
+  margin-right: 0;
+}
+
+.filter-list__btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+
+  color: $filters-text-color;
+  background-color: $filters-background-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: $timing-duration;
+  transition-timing-function: $timing-fanction;
+}
+
+.filter-list__btn:hover,
+.filter-list__btn:focus,
+.active {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  transition-property: box-shadow;
+  transition-duration: $timing-duration;
+  transition-timing-function: $timing-fanction;
+}
+
+.portfolio__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio__item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio__item:hover,
+.portfolio__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__overlay {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__overlay--description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: $primary-white-color;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(101%);
+  opacity: 0;
+
+  transition-property: transform, opacity;
+  transition-duration: $timing-duration;
+  transition-timing-function: $timing-fanction;
+  /* overflow: auto; */
+}
+
+.portfolio__link:hover .portfolio__overlay--description,
+.portfolio__link:focus .portfolio__overlay--description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio__work {
+  background: $primary-white-color;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.portfolio__lable {
+  color: $title-text-color;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio__description {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}

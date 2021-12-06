@@ -1,0 +1,13 @@
+.header {
+  background-color: $main-bg-color;
+  border-bottom: 1px solid $header-border-color;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+@import "./header-logo";
+@import "./header-navigation";
+@import "./header-connect";
