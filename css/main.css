@@ -60,7 +60,13 @@ body {
   margin: -1px;
 }
 
-.button {
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero__btn, .footer-subscribe__btn, .modal-form__btn {
   min-width: 200px;
   border-radius: 4px;
   color: #ffffff;
@@ -255,8 +261,7 @@ body {
   padding: 10px 32px;
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
 }
 
@@ -266,7 +271,7 @@ body {
   background-color: #ffffff;
 }
 
-.feature__title, .work__title, .team__title, .clients__title {
+.feature__title, .work__title, .team__title, .clients__title, .portfolio__title {
   margin-bottom: 50px;
   color: #212121;
   font-size: 36px;
@@ -450,8 +455,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social__link:hover,
-.team-social__link:focus {
+.team-social__link:hover, .team-social__link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -478,6 +482,12 @@ body {
   margin-right: 0;
 }
 
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,16 +511,9 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid #2196f3;
   color: #2196f3;
-}
-
-.clients__icon {
-  width: 106px;
-  height: 60px;
-  fill: currentColor;
 }
 
 .footer {
@@ -792,20 +795,13 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close:hover,
-.modal__close:focus {
+.modal__close:hover, .modal__close:focus {
   fill: #2196f3;
 }
 
 .modal__close--icon {
   width: 18px;
   height: 18px;
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .modal-form {
@@ -966,10 +962,7 @@ body {
   border-color: transparent;
 }
 
-.modal-form__checkbox:hover + .modal-form__checkbox--icon {
-  border: 2px solid #2196f3;
-}
-
+.modal-form__checkbox:hover + .modal-form__checkbox--icon,
 .modal-form__checkbox:focus + .modal-form__checkbox--icon {
   border: 2px solid #2196f3;
 }
@@ -995,8 +988,7 @@ body {
   padding: 10px 55px;
 }
 
-.modal-form__btn:hover,
-.modal-form__btn:focus {
+.modal-form__btn:hover, .modal-form__btn:focus {
   background-color: #188ce8;
 }
 
@@ -1039,9 +1031,14 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-list__btn:hover,
-.filter-list__btn:focus,
-.active {
+.filter-list__btn:hover, .filter-list__btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-list__active {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1079,8 +1076,7 @@ body {
   margin-bottom: 0;
 }
 
-.portfolio__item:hover,
-.portfolio__item:focus {
+.portfolio__item:hover, .portfolio__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

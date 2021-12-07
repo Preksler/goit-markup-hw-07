@@ -16,27 +16,28 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-.hero__title {
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 696px;
+  &__title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
 
-  color: $primary-white-color;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
 .hero__btn {
+  @extend %button;
   padding: 10px 32px;
-}
 
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: $btn-bg-color-hover;
+  &:hover,
+  &:focus {
+    background-color: $btn-bg-color-hover;
+  }
 }

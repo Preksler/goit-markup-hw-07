@@ -1,22 +1,22 @@
 .team {
   background-color: $third-bg-color;
-}
 
-.team__title {
-  @extend %section__title;
-}
+  &__title {
+    @extend %section__title;
+  }
 
-.team__list {
-  display: flex;
-}
+  &__list {
+    display: flex;
+  }
 
-.team__item {
-  flex-basis: calc((100% - 3 * 30px) / 4);
-  margin-right: 30px;
-}
+  &__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
 
-.team__item:last-child {
-  margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .team-card {
@@ -24,68 +24,68 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
 
-.team-card__wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+  &__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-.team-card__title {
-  margin-bottom: 10px;
+  &__title {
+    margin-bottom: 10px;
 
-  color: $title-text-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 
-.team-card__description {
-  margin-bottom: 16px;
-  color: $text-color;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+  &__description {
+    margin-bottom: 16px;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .team-social {
   display: flex;
   justify-content: center;
-}
 
-.team-social__item {
-  margin-right: 10px;
-}
+  &__item {
+    margin-right: 10px;
 
-.team-social__item:last-child {
-  margin-right: 0;
-}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-.team-social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: $social-bg;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $social-bg;
 
-  transition-property: color, background-color;
-  transition-duration: $timing-duration;
-  transition-timing-function: $timing-fanction;
-}
+    transition-property: color, background-color;
+    transition-duration: $timing-duration;
+    transition-timing-function: $timing-fanction;
 
-.team-social__link:hover,
-.team-social__link:focus {
-  background-color: $accent-color;
-  color: $primary-white-color;
-}
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $primary-white-color;
+    }
+  }
 
-.team-social__icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
 }
