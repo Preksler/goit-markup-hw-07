@@ -35,9 +35,7 @@
 
   color: $social-bg;
 
-  transition-property: color, border;
-  transition-duration: $timing-duration;
-  transition-timing-function: $timing-fanction;
+  @include TransitionProperty(color, border);
 
   &:hover,
   &:focus {

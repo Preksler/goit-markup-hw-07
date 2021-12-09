@@ -15,9 +15,7 @@
   &__link {
     color: $text-footer-contact-color;
 
-    transition-property: color;
-    transition-duration: $timing-duration;
-    transition-timing-function: $timing-fanction;
+    @include TransitionProperty(color);
 
     &:hover,
     &:focus {
@@ -27,9 +25,7 @@
     &--maps {
       color: $primary-white-color;
 
-      transition-property: color;
-      transition-duration: $timing-duration;
-      transition-timing-function: $timing-fanction;
+      @include TransitionProperty(color);
 
       &:hover,
       &:focus {

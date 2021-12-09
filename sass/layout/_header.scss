@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-@import "./logo";
-@import "./header-logo";
-@import "./header-navigation";
-@import "./header-connect";
+@import "../components/logo";
+@import "../components/header-logo";
+@import "../components/header-navigation";
+@import "../components/header-connect";

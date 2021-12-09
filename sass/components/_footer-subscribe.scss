@@ -30,9 +30,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
 
-    transition-property: border-color;
-    transition-duration: $timing-duration;
-    transition-timing-function: $timing-fanction;
+    @include TransitionProperty(border-color);
 
     &:focus {
       border-color: $accent-color;

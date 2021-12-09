@@ -72,9 +72,7 @@
     border-radius: 50%;
     color: $social-bg;
 
-    transition-property: color, background-color;
-    transition-duration: $timing-duration;
-    transition-timing-function: $timing-fanction;
+    @include TransitionProperty(color, background-color);
 
     &:hover,
     &:focus {

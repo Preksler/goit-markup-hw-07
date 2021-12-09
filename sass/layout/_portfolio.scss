@@ -1,4 +1,4 @@
-@import "./portfolio-filter";
+@import "../components/portfolio-filter";
 
 .portfolio {
   &__title {
@@ -15,9 +15,7 @@
     margin-right: 30px;
     margin-bottom: 30px;
 
-    transition-property: box-shadow;
-    transition-duration: $timing-duration;
-    transition-timing-function: $timing-fanction;
+    @include TransitionProperty(box-shadow);
 
     &:nth-child(3n) {
       margin-right: 0;
@@ -58,9 +56,7 @@
       transform: translateY(101%);
       opacity: 0;
 
-      transition-property: transform, opacity;
-      transition-duration: $timing-duration;
-      transition-timing-function: $timing-fanction;
+      @include TransitionProperty(transform, opacity);
       /* overflow: auto; */
     }
   }

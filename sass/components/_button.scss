@@ -10,7 +10,5 @@
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition-property: background-color;
-  transition-duration: $timing-duration;
-  transition-timing-function: $timing-fanction;
+  @include TransitionProperty(background-color);
 }

@@ -22,9 +22,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    transition-property: color;
-    transition-duration: $timing-duration;
-    transition-timing-function: $timing-fanction;
+    @include TransitionProperty(color);
 
     &:hover,
     &:focus {
