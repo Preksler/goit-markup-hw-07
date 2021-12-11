@@ -17,29 +17,28 @@
     }
   }
 
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $social-bg;
+    border-radius: 4px;
+
+    color: $social-bg;
+    @include TransitionProperty(color, border);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      color: $accent-color;
+    }
+  }
+
   &__icon {
     width: 106px;
     height: 60px;
     fill: currentColor;
-  }
-}
-
-.clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border: 1px solid $social-bg;
-  border-radius: 4px;
-
-  color: $social-bg;
-
-  @include TransitionProperty(color, border);
-
-  &:hover,
-  &:focus {
-    border: 1px solid $accent-color;
-    color: $accent-color;
   }
 }
